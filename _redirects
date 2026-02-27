@@ -1,3 +1,10 @@
+# Download the PDF (hosted on GitHub and built via Action)
+/download https://thedefiantred.github.io/book/book.pdf 302!
+/pdf /download 302!
+
+# Our DOI (Digital Object Identifier)
+/doi https://doi.org/10.5281/zenodo.18744218 302!
+
 # Redirect domain aliases to primary domain
 https://www.defiantred.com/* https://www.thedefiantred.com/:splat 301!
 
