@@ -3899,6 +3899,14 @@ article.chem {
   transform: translate3d(0, 0, 0);
 }
 
+#download p a {
+  color: var(--color-3);
+}
+
+#download p a:hover {
+  text-decoration: underline;
+}
+
 /* -------------------------------------------------------------------
  * responsive:
  * footer
