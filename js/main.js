@@ -224,19 +224,29 @@
     };
 
 
-   /* Animate On Scroll
+   /* Reveal On Scroll (Native Intersection Observer)
     * ------------------------------------------------------ */
-    var ssAOS = function() {
+    var ssScrollReveal = function() {
+        var elements = document.querySelectorAll('[data-aos]');
         
-        AOS.init( {
-            offset: 200,
-            duration: 600,
-            easing: 'ease-in-sine',
-            delay: 300,
-            once: true,
-            disable: 'mobile'
+        if (!elements.length) return;
+
+        var observer = new IntersectionObserver(function(entries, observer) {
+            entries.forEach(function(entry) {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('aos-animate');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.15 // Trigger when 15% of the element is visible
         });
 
+        elements.forEach(function(el) {
+            observer.observe(el);
+        });
     };
 
 
@@ -303,7 +313,7 @@
         ssSlickSlider();
         ssSmoothScroll();
         ssAlertBoxes();
-        ssAOS();
+        ssScrollReveal();
         ssBackToTop();
         ssAjaxChimp();
 
