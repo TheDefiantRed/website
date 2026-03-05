@@ -5,13 +5,13 @@ This document outlines a roadmap to achieve a 100/100 score on PageSpeed Insight
 ## 1. PageSpeed Insights (Performance)
 
 ### Optimize Images (Largest Contentful Paint - LCP)
-* [ ] **Convert to Next-Gen Formats**: Convert `hero-app-screens-1600.png` (1.2MB!), `hero-app-screens-800.png` (401KB), and `hero-bg.jpg` (368KB) to WebP or AVIF formats.
-* [ ] **Compress Images**: The hero images are significantly oversized and unoptimized. Compress them thoroughly before deploying.
-* [ ] **Preload LCP Image**: Add `<link rel="preload" as="image" href="..." imagesrcset="...">` in the `<head>` for the hero image so the browser discovers it immediately.
+* [x] **Convert to Next-Gen Formats**: Replaced `hero-app-screens` images with `the-defiant-red-book-mockup.webp` (24KB). Still need to convert `hero-bg.jpg` (368KB) to WebP or AVIF format.
+* [x] **Compress Images**: The hero mockup is significantly optimized now (24KB). `hero-bg.jpg` might still need compression.
+* [ ] **Preload LCP Image**: Add `<link rel="preload" as="image" href="images/the-defiant-red-book-mockup.webp">` in the `<head>` for the hero image so the browser discovers it immediately.
 * [ ] **Fix JS-Dependent Background**: The parallax background (`hero-bg.jpg`) is loaded via `data-image-src` in JS. This delays the download. Move this to an inline `style="background-image: url(...)"` or a CSS class to ensure the browser fetches it early.
 
 ### Prevent Layout Shifts (Cumulative Layout Shift - CLS)
-* [ ] **Explicit Dimensions**: Add `width` and `height` attributes to the hero image (`<img alt="..." src="images/hero-app-screens-800.png" width="800" height="...">`). This allows the browser to allocate space before the image loads, preventing content from jumping.
+* [x] **Explicit Dimensions**: Add `width` and `height` attributes to the hero image (`<img alt="..." src="images/the-defiant-red-book-mockup.webp" width="420" height="705">`). This allows the browser to allocate space before the image loads, preventing content from jumping.
 
 ### Reduce Render-Blocking Resources (First Contentful Paint - FCP)
 * [ ] **Defer JavaScript**: Add the `defer` attribute to all `<script>` tags in the `<head>` (`modernizr.js`, `pace.min.js`, `sweetalert2.min.js`). Alternatively, move them to the bottom of the `<body>`.
