@@ -5,8 +5,8 @@ This document outlines a roadmap to achieve a 100/100 score on PageSpeed Insight
 ## 1. PageSpeed Insights (Performance)
 
 ### Optimize Images (Largest Contentful Paint - LCP)
-* [x] **Convert to Next-Gen Formats**: Replaced `hero-app-screens` images with `the-defiant-red-book-mockup.webp` (24KB). Still need to convert `hero-bg.jpg` (368KB) to WebP or AVIF format.
-* [x] **Compress Images**: The hero mockup is significantly optimized now (24KB). `hero-bg.jpg` might still need compression.
+* [x] **Convert to Next-Gen Formats**: Replaced `hero-app-screens` images with `the-defiant-red-book-mockup.webp` (24KB). Converted `hero-bg.jpg` to `hero-bg.webp`.
+* [x] **Compress Images**: The hero mockup and background images have been significantly optimized and converted to WebP.
 * [x] **Preload LCP Image**: Add `<link rel="preload" as="image" href="images/the-defiant-red-book-mockup.webp">` in the `<head>` for the hero image so the browser discovers it immediately.
 * [x] **Fix JS-Dependent Background**: The parallax background (`hero-bg.jpg`) is loaded via `data-image-src` in JS. This delays the download. Move this to an inline `style="background-image: url(...)"` or a CSS class to ensure the browser fetches it early.
 
