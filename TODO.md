@@ -7,8 +7,8 @@ This document outlines a roadmap to achieve a 100/100 score on PageSpeed Insight
 ### Optimize Images (Largest Contentful Paint - LCP)
 * [x] **Convert to Next-Gen Formats**: Replaced `hero-app-screens` images with `the-defiant-red-book-mockup.webp` (24KB). Still need to convert `hero-bg.jpg` (368KB) to WebP or AVIF format.
 * [x] **Compress Images**: The hero mockup is significantly optimized now (24KB). `hero-bg.jpg` might still need compression.
-* [ ] **Preload LCP Image**: Add `<link rel="preload" as="image" href="images/the-defiant-red-book-mockup.webp">` in the `<head>` for the hero image so the browser discovers it immediately.
-* [ ] **Fix JS-Dependent Background**: The parallax background (`hero-bg.jpg`) is loaded via `data-image-src` in JS. This delays the download. Move this to an inline `style="background-image: url(...)"` or a CSS class to ensure the browser fetches it early.
+* [x] **Preload LCP Image**: Add `<link rel="preload" as="image" href="images/the-defiant-red-book-mockup.webp">` in the `<head>` for the hero image so the browser discovers it immediately.
+* [x] **Fix JS-Dependent Background**: The parallax background (`hero-bg.jpg`) is loaded via `data-image-src` in JS. This delays the download. Move this to an inline `style="background-image: url(...)"` or a CSS class to ensure the browser fetches it early.
 
 ### Prevent Layout Shifts (Cumulative Layout Shift - CLS)
 * [x] **Explicit Dimensions**: Add `width` and `height` attributes to the hero image (`<img alt="..." src="images/the-defiant-red-book-mockup.webp" width="420" height="705">`). This allows the browser to allocate space before the image loads, preventing content from jumping.

@@ -62,6 +62,9 @@
     <meta name="DC.identifier" content="doi:10.5281/zenodo.18744218">
     <meta name="DC.identifier" content="isbn:9789090420134">
     <meta name="DC.title" content="The Defiant Red">
+
+    <!-- preload LCP image -->
+    <link rel="preload" as="image" href="images/the-defiant-red-book-mockup.webp" />
   </head>
 
   <body id="top">
@@ -122,11 +125,7 @@
     <section
       id="home"
       class="s-home target-section"
-      data-parallax="scroll"
-      data-image-src="images/hero-bg.jpg"
-      data-natural-width="3000"
-      data-natural-height="2000"
-      data-position-y="center"
+      style="background-image: url('images/hero-bg.jpg'); background-size: cover; background-position: center; background-attachment: fixed; background-repeat: no-repeat;"
     >
       <div class="shadow-overlay"></div>
 
