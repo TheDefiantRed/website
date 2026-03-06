@@ -7,11 +7,7 @@
 
     "use strict";
 
-    var cfg = {
-        scrollDuration : 800, // smoothscroll duration
-    },
-
-    $WIN = $(window);
+    var $WIN = $(window);
 
     // Add the User Agent to the <html>
     // will be used for IE10 detection (Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Trident/6.0))
@@ -198,7 +194,7 @@
 
             $('html, body').stop().animate({
                 'scrollTop': $target.offset().top
-            }, cfg.scrollDuration, 'swing').promise().done(function () {
+            }, 800, 'swing').promise().done(function () {
 
                 // check if menu is open
                 // if ($('body').hasClass('menu-is-open')) {
