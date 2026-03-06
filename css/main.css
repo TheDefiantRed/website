@@ -1685,7 +1685,7 @@ html.ss-loaded .home-content__main {
     font-size: 2rem;
   }
 
-  
+
   .home-scroll {
     display: none;
   }
@@ -2142,38 +2142,15 @@ article.chem {
  *
  * ------------------------------------------------------------------- */
 .s-pricing {
-  padding-top: 19.2rem;
+  padding-top: 14rem;
+  padding-bottom: 14rem;
   background-color: #ffffff;
   position: relative;
 }
 
-/* -------------------------------------------------------------------
- * responsive:
- * pricing
- * ------------------------------------------------------------------- */
-@media only screen and (max-width: 1200px) {
-  .s-pricing {
-    padding-top: 18.4rem;
-  }
-}
-
-@media only screen and (max-width: 1000px) {
-  .s-pricing {
-    padding-top: 17.2rem;
-    padding-bottom: 17.2rem;
-  }
-}
-
-@media only screen and (max-width: 800px) {
-  .s-pricing {
-    padding-top: 16rem;
-    padding-bottom: 14.8rem;
-  }
-}
-
 @media only screen and (max-width: 600px) {
   .s-pricing {
-    padding-top: 14.8rem;
+    padding-top: 12rem;
     padding-bottom: 12rem;
   }
 }
