@@ -552,7 +552,7 @@ button.btn--primary,
 input[type="button"].btn--primary {
   background: var(--color-3);
   border-color: var(--color-3);
-  color: var(--color-ffffff);
+  color: var(--color-white);
 }
 
 .btn.btn--primary:hover,
@@ -732,7 +732,7 @@ input::-moz-focus-inner {
   height: 10px;
   line-height: 10px;
   border-radius: 50%;
-  background: var(--color-rgb-0-0-0-0_4);
+  background: var(--color-rgb-black_4);
   border: none;
   padding: 0;
   margin: 0;
@@ -920,18 +920,18 @@ input::-moz-focus-inner {
 .header-nav-wrap .header-main-nav li a {
   display: block;
   line-height: 78px;
-  color: var(--color-rgb-255-255-255-0_5);
+  color: var(--color-rgb-white-0_5);
   outline: none;
   position: relative;
 }
 
 .header-nav-wrap .header-main-nav li a:hover,
 .header-nav-wrap .header-main-nav li a:focus {
-  color: var(--color-ffffff);
+  color: var(--color-white);
 }
 
 .header-nav-wrap .header-main-nav li.current a {
-  color: var(--color-ffffff);
+  color: var(--color-white);
 }
 
 .header-nav-wrap .header-cta {
@@ -955,7 +955,7 @@ input::-moz-focus-inner {
   font-size: 1.4rem;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
-  color: var(--color-rgb-255-255-255-0_5);
+  color: var(--color-rgb-white-0_5);
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   position: absolute;
@@ -965,7 +965,7 @@ input::-moz-focus-inner {
 
 .header-menu-toggle:hover,
 .header-menu-toggle:focus {
-  color: var(--color-ffffff);
+  color: var(--color-white);
 }
 
 .header-menu-toggle span {
@@ -1007,7 +1007,7 @@ input::-moz-focus-inner {
 }
 
 .header-menu-toggle.is-clicked span {
-  background-color: var(--color-rgb-255-255-255-0);
+  background-color: var(--color-rgb-white-0);
   -webkit-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
 }
@@ -1100,14 +1100,14 @@ input::-moz-focus-inner {
     padding-left: 0;
     margin: 0;
     height: auto;
-    border-top: 1px solid var(--color-rgb-255-255-255-0_03);
+    border-top: 1px solid var(--color-rgb-white-0_03);
   }
 
   .header-nav-wrap .header-main-nav li {
     display: block;
     margin: 0;
     padding: 0;
-    border-bottom: 1px solid var(--color-rgb-255-255-255-0_03);
+    border-bottom: 1px solid var(--color-rgb-white-0_03);
   }
 
   .header-nav-wrap .header-main-nav li a {
@@ -1185,8 +1185,8 @@ input::-moz-focus-inner {
   opacity: 0.3;
   background: linear-gradient(
     to bottom,
-    var(--color-rgb-0-0-0-0_4) 0%,
-    var(--color-rgb-0-0-0-0) 100%
+    var(--color-rgb-black_4) 0%,
+    var(--color-rgb-black) 100%
   );
 }
 
@@ -1207,7 +1207,7 @@ input::-moz-focus-inner {
   font-weight: 600;
   font-size: 7.2rem;
   line-height: 1.222;
-  color: var(--color-ffffff);
+  color: var(--color-white);
   margin-top: 0;
   margin-bottom: 0;
   padding-top: 3.2rem;
@@ -1231,7 +1231,7 @@ input::-moz-focus-inner {
   font-size: 2.4rem;
   line-height: 1.667;
   font-style: normal;
-  color: var(--color-rgb-255-255-255-0_3);
+  color: var(--color-rgb-white-0_3);
   margin-top: 2rem;
   width: 85%;
 }
@@ -1308,7 +1308,7 @@ input::-moz-focus-inner {
   display: block;
   height: 5.6rem;
   width: 5.6rem;
-  background-color: var(--color-rgb-255-255-255-0_05);
+  background-color: var(--color-rgb-white-0_05);
   background-image: url(../images/icons/icon-arrow-down.svg);
   background-position: center center;
   background-repeat: no-repeat;
@@ -1322,13 +1322,13 @@ input::-moz-focus-inner {
 }
 
 .home-scroll:hover .home-scroll__text {
-  border-bottom: 1px solid var(--color-ffffff);
+  border-bottom: 1px solid var(--color-white);
 }
 
 #home-mockup {
   transform: rotate(-1deg);
-  filter: drop-shadow(0 6px 8px var(--color-rgb-0-0-0-0_25))
-          drop-shadow(0 20px 30px var(--color-rgb-0-0-0-0_15));
+  filter: drop-shadow(0 6px 8px var(--color-rgb-black_25))
+          drop-shadow(0 20px 30px var(--color-rgb-black_15));
 }
 
 /* animate .home-content__main
@@ -1696,22 +1696,22 @@ html.ss-loaded .home-content__main {
   padding-top: 23.2rem;
   padding-bottom: calc((62.4rem / 2) + 6.4rem);
   background-color: var(--color-2);
-  color: var(--color-rgb-255-255-255-0_8);
+  color: var(--color-rgb-white-0_8);
   overflow: hidden;
   position: relative;
 }
 
 .s-about .section-header.has-bottom-sep::before {
-  background-color: var(--color-rgb-255-255-255-0_1);
+  background-color: var(--color-rgb-white-0_1);
 }
 
 .s-about .display-1,
 .s-about h3 {
-  color: var(--color-ffffff);
+  color: var(--color-white);
 }
 
 .s-about p.lead {
-  color: var(--color-rgb-255-255-255-0_6);
+  color: var(--color-rgb-white-0_6);
 }
 
 /* -------------------------------------------------------------------
@@ -1731,7 +1731,7 @@ html.ss-loaded .home-content__main {
 
 .about-desc__slider .slick-dots li.slick-active button,
 .about-desc__slider .slick-dots li:hover button {
-  background: var(--color-ffffff);
+  background: var(--color-white);
 }
 
 .about-desc__slide {
@@ -2020,7 +2020,7 @@ article.chem {
 
 .testimonials__link {
   font-size: 1.6rem;
-  color: var(--color-rgb-0-0-0-0_4);
+  color: var(--color-rgb-black_4);
 }
 
 /* -------------------------------------------------------------------
@@ -2066,7 +2066,7 @@ article.chem {
 .s-pricing {
   padding-top: 14rem;
   padding-bottom: 14rem;
-  background-color: var(--color-ffffff);
+  background-color: var(--color-white);
   position: relative;
 }
 
@@ -2094,13 +2094,13 @@ article.chem {
 .s-footer {
   padding: 4.8rem 0;
   margin-top: 9.6rem;
-  color: var(--color-rgb-255-255-255-0_4);
+  color: var(--color-rgb-white-0_4);
   background-color: var(--color-0e1113);
   position: relative;
 }
 
 .s-footer a {
-  color: var(--color-ffffff);
+  color: var(--color-white);
 }
 
 .s-footer a:hover,
@@ -2116,17 +2116,17 @@ article.chem {
 .s-footer h4 {
   margin-top: 0;
   margin-bottom: 1.6rem;
-  color: var(--color-ffffff);
+  color: var(--color-white);
 }
 
 .s-footer p.lead {
-  color: var(--color-rgb-255-255-255-0_3);
+  color: var(--color-rgb-white-0_3);
 }
 
 .footer__bottom {
   margin-top: 1.6rem;
   padding-top: 3.9rem;
-  border-top: 1px solid var(--color-rgb-255-255-255-0_03);
+  border-top: 1px solid var(--color-rgb-white-0_03);
 }
 
 /* -------------------------------------------------------------------
@@ -2197,7 +2197,7 @@ article.chem {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 10px 15px;
-  color: var(--color-rgb-255-255-255-0_5);
+  color: var(--color-rgb-white-0_5);
   text-align: center;
   text-transform: uppercase;
   border-radius: 50%;
@@ -2262,7 +2262,7 @@ article.chem {
 
   .s-footer h4 {
     padding-bottom: 1.6rem;
-    border-bottom: 1px solid var(--color-rgb-255-255-255-0_03);
+    border-bottom: 1px solid var(--color-rgb-white-0_03);
   }
 
   .footer__bottom {
