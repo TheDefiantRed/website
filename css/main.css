@@ -22,7 +22,6 @@
  *    ## Change Autocomplete styles in Chrome
  *  # buttons
  *  # additional components
- *    ## alert box
  *    ## additional typo styles
  *    ## skillbars
  *  # reusable and common theme styles
@@ -1061,51 +1060,6 @@ input::-moz-focus-inner {
  * # additional components
  *
  * ------------------------------------------------------------------- */
-
-/* -------------------------------------------------------------------
- * ## alert box
- * ------------------------------------------------------------------- */
-.alert-box {
-  padding: 2.4rem 4rem 2.4rem 3.2rem;
-  position: relative;
-  margin-bottom: 3.2rem;
-  border-radius: 4px;
-  font-family: "Nunito Sans", sans-serif;
-  font-weight: 600;
-  font-size: 1.5rem;
-  line-height: 1.6;
-}
-
-.alert-box__close {
-  position: absolute;
-  right: 1.6rem;
-  top: 1.6rem;
-  cursor: pointer;
-}
-
-.alert-box__close.fa {
-  font-size: 12px;
-}
-
-.alert-box--error {
-  background-color: #ffd1d2;
-  color: #dd4043;
-}
-
-.alert-box--success {
-  background-color: #c8e675;
-  color: #637533;
-}
-
-.alert-box--info {
-  background-color: #d5ebfb;
-  color: #5499c9;
-}
-
-.alert-box--notice {
-  background-color: #fff099;
-  color: #c3ab22;
-}
 
 /* -------------------------------------------------------------------
  * ## additional typo styles

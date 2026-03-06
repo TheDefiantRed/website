@@ -14,9 +14,9 @@ This document outlines a roadmap to achieve a 100/100 score on PageSpeed Insight
 * [x] **Explicit Dimensions**: Add `width` and `height` attributes to the hero image (`<img alt="..." src="images/the-defiant-red-book-mockup.webp" width="420" height="705">`). This allows the browser to allocate space before the image loads, preventing content from jumping.
 
 ### Reduce Render-Blocking Resources (First Contentful Paint - FCP)
-* [ ] **Defer JavaScript**: Add the `defer` attribute to all `<script>` tags in the `<head>` (`modernizr.js`, `pace.min.js`, `sweetalert2.min.js`). Alternatively, move them to the bottom of the `<body>`.
+* [ ] **Defer JavaScript**: Add the `defer` attribute to all `<script>` tags in the `<head>` (`modernizr.js`, `pace.min.js`). Alternatively, move them to the bottom of the `<body>`.
 * [ ] **Remove Preloader**: Remove the `div#preloader` and the `pace.min.js` library. Artificial loading screens actively hurt FCP and LCP scores and negatively impact user experience.
-* [ ] **Non-Critical CSS**: Load non-critical CSS (like `sweetalert2.min.css`) asynchronously using `media="print" onload="this.media='all'"`, as it's not needed for the initial render.
+* [ ] **Non-Critical CSS**: Load non-critical CSS asynchronously using `media="print" onload="this.media='all'"`, as it's not needed for the initial render.
 
 ### Asset Minification
 * [ ] **Minify CSS & JS**: Minify `main.css`, `base.css`, `vendor.css`, and `main.js`. Currently, they are served unminified which wastes bytes.
@@ -30,7 +30,7 @@ This document outlines a roadmap to achieve a 100/100 score on PageSpeed Insight
 
 ## 3. Codebase Best Practices
 
-* [ ] **Dependency Management**: Currently, vendor libraries (jQuery, Pace, SweetAlert2) are manually downloaded and placed in the `/js/` folder. Introduce a simple `package.json` and a bundler (like Vite, Parcel, or at least npm scripts) to manage, update, bundle, and minify dependencies automatically.
+* [ ] **Dependency Management**: Currently, vendor libraries (jQuery, Pace) are manually downloaded and placed in the `/js/` folder. Introduce a simple `package.json` and a bundler (like Vite, Parcel, or at least npm scripts) to manage, update, bundle, and minify dependencies automatically.
 * [ ] **Semantic HTML**: Review the use of `<article class="chem">Fe</article>`. An `<article>` should make sense on its own (like a blog post). A `<div>` or `<span aria-hidden="true">` would be more semantically correct for an icon/chemical symbol.
 * [ ] **Accessibility (A11y)**:
   * Check color contrast ratios, especially text sitting on top of the parallax background image (`hero-bg.jpg`).

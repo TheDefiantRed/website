@@ -211,18 +211,6 @@
 
     };
 
-
-   /* Alert Boxes
-    * ------------------------------------------------------ */
-    var ssAlertBoxes = function() {
-
-        $('.alert-box').on('click', '.alert-box__close', function() {
-            $(this).parent().fadeOut(500);
-        });
-
-    };
-
-
    /* Reveal On Scroll (Native Intersection Observer)
     * ------------------------------------------------------ */
     var ssScrollReveal = function() {
@@ -278,7 +266,6 @@
         ssWaypoints();
         ssSlickSlider();
         ssSmoothScroll();
-        ssAlertBoxes();
         ssScrollReveal();
         ssBackToTop();
 
