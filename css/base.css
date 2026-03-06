@@ -73,22 +73,12 @@ svg:not(:root) {
   overflow: hidden;
 }
 
-button,
-input,
-select {
+button {
   font-family: sans-serif;
   font-size: 100%;
   line-height: 1.15;
   margin: 0;
-}
-
-button,
-input {
   overflow: visible;
-}
-
-button,
-select {
   text-transform: none;
 }
 
@@ -152,7 +142,6 @@ body {
 }
 
 body,
-input,
 button {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -225,21 +214,6 @@ a {
 
 a img {
   border: none;
-}
-
-/* -------------------------------------------------------------------
- * ## inputs
- * ------------------------------------------------------------------- */
-
-input[type="email"],
-input[type="number"],
-input[type="text"],
-input[type="url"] {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -ms-appearance: none;
-  -o-appearance: none;
-  appearance: none;
 }
 
 /* ===================================================================
@@ -405,7 +379,7 @@ input[type="url"] {
     clear: none;
   }
 
-  
+
   .block-m-1-2 .col-block:nth-child(2n + 1) {
     clear: both;
   }
