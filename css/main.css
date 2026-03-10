@@ -1225,7 +1225,7 @@ input::-moz-focus-inner {
   top: 0;
 }
 
-.home-content h3 {
+.home-content h2 {
   font-family: "Nunito Sans", sans-serif;
   font-weight: 300;
   font-size: 2.4rem;
@@ -1424,7 +1424,7 @@ html.ss-loaded .home-content__main {
     font-size: 6.8rem;
   }
 
-  .home-content h3 {
+  .home-content h2 {
     width: 100%;
   }
 
@@ -1448,7 +1448,7 @@ html.ss-loaded .home-content__main {
     font-size: 6.2rem;
   }
 
-  .home-content h3 {
+  .home-content h2 {
     font-size: 2.2rem;
   }
 
@@ -1470,7 +1470,7 @@ html.ss-loaded .home-content__main {
     font-size: 6rem;
   }
 
-  .home-content h3 {
+  .home-content h2 {
     font-size: 2.1rem;
     width: 90%;
   }
@@ -1494,7 +1494,7 @@ html.ss-loaded .home-content__main {
     font-size: 5.6rem;
   }
 
-  .home-content h3 {
+  .home-content h2 {
     font-size: 1.9rem;
   }
 
@@ -1531,7 +1531,7 @@ html.ss-loaded .home-content__main {
     display: none;
   }
 
-  .home-content h3 {
+  .home-content h2 {
     font-size: 2.4rem;
     width: 100%;
   }
@@ -1571,7 +1571,7 @@ html.ss-loaded .home-content__main {
     font-size: 6.2rem;
   }
 
-  .home-content h3 {
+  .home-content h2 {
     font-size: 2.2rem;
   }
 
@@ -1589,7 +1589,7 @@ html.ss-loaded .home-content__main {
     font-size: 6rem;
   }
 
-  .home-content h3 {
+  .home-content h2 {
     font-size: 2.1rem;
   }
 
@@ -1603,7 +1603,7 @@ html.ss-loaded .home-content__main {
     font-size: 5.6rem;
   }
 
-  .home-content h3 {
+  .home-content h2 {
     font-size: 2rem;
   }
 
@@ -1618,7 +1618,7 @@ html.ss-loaded .home-content__main {
     font-size: 5.2rem;
   }
 
-  .home-content h3 {
+  .home-content h2 {
     font-size: 1.8rem;
   }
 
@@ -2113,7 +2113,7 @@ article.chem {
   color: var(--color-2);
 }
 
-.s-footer h4 {
+.s-footer h2 {
   margin-top: 0;
   margin-bottom: 1.6rem;
   color: var(--color-white);
@@ -2260,7 +2260,7 @@ article.chem {
     padding-bottom: 4rem;
   }
 
-  .s-footer h4 {
+  .s-footer h2 {
     padding-bottom: 1.6rem;
     border-bottom: 1px solid var(--color-rgb-white-0_03);
   }
