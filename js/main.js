@@ -121,6 +121,39 @@
     * ------------------------------------------------------ */
     var ssSlickSlider = function() {
 
+        // Fix Slick Slider ARIA issues before initialization
+        $('.about-desc__slider, .testimonials__slider').on('init', function(event, slick) {
+            var $slider = $(slick.$slider);
+            var $track = $(slick.$slideTrack);
+            var $slides = $(slick.$slides);
+
+            $slider.attr({
+                'role': 'region',
+                'aria-label': 'Content Carousel',
+                'aria-roledescription': 'carousel'
+            });
+
+            // Remove invalid listbox role
+            $track.removeAttr('role');
+            
+            // Fix slide roles
+            $slides.each(function() {
+                var $slide = $(this);
+                $slide.removeAttr('role').removeAttr('aria-describedby');
+                $slide.attr({
+                    'role': 'group',
+                    'aria-roledescription': 'slide',
+                    'aria-label': 'Slide ' + ($slide.data('slick-index') + 1) + ' of ' + slick.slideCount
+                });
+            });
+
+            // Clean up dots
+            if (slick.$dots) {
+                slick.$dots.find('li').removeAttr('role');
+                slick.$dots.find('li button').removeAttr('role').removeAttr('aria-controls');
+            }
+        });
+
         $('.about-desc__slider').slick({
             arrows: false,
             dots: true,

@@ -25,7 +25,7 @@ This document outlines a roadmap to achieve a 100/100 score on PageSpeed Insight
 
 ## 2. Accessibility (A11y) - High Impact
 
-* [ ] **Replace Slick Slider (Critical ARIA Errors)**: The Slick slider library causes multiple critical ARIA failures (`aria-allowed-attr`, `aria-required-children`, `aria-input-field-name`). Replacing it with a modern, accessible Vanilla JS slider or CSS scroll-snap is highly recommended to fix these issues.
+* [x] **Replace Slick Slider (Critical ARIA Errors)**: The Slick slider library causes multiple critical ARIA failures (`aria-allowed-attr`, `aria-required-children`, `aria-input-field-name`). ~~Replacing it with a modern, accessible Vanilla JS slider or CSS scroll-snap is highly recommended to fix these issues.~~ *Mitigated via JS patch hooking into Slick's `init` event to replace invalid roles with `role="region"` and `role="group"`.*
 * [ ] **Fix Heading Order**: Heading elements are not in a sequentially-descending order.
   * In `.home-content__left`, an `<h1>` is followed directly by an `<h3>`.
   * Missing `<h2>` before `<h3>` elements like "History" and "Iron".
