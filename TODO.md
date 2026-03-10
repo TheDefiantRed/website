@@ -30,7 +30,7 @@ This document outlines a roadmap to achieve a 100/100 score on PageSpeed Insight
   * In `.home-content__left`, an `<h1>` is followed directly by an `<h3>`.
   * Missing `<h2>` before `<h3>` elements like "History" and "Iron".
   * Footer uses `<h4>` directly.
-* [ ] **Improve Color Contrast**: Footer text (`#6e7071` on `#0e1113`) has an insufficient contrast ratio (3.8 vs expected 4.5). Lighten the text color.
+* [x] **Improve Color Contrast**: Footer text (`#6e7071` on `#0e1113`) has an insufficient contrast ratio (3.8 vs expected 4.5). Lighten the text color.
 * [ ] **Screen Reader Labels**: Ensure the "Back to Top" link (`<a class="smoothscroll" href="#top"></a>`) has visible text or an `aria-label` for screen readers.
 
 ## 3. Netlify Headers & Caching (`_headers`) - Medium Impact

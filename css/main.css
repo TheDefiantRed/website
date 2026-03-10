@@ -2094,7 +2094,7 @@ article.chem {
 .s-footer {
   padding: 4.8rem 0;
   margin-top: 9.6rem;
-  color: var(--color-rgb-white-0_4);
+  color: var(--color-rgb-white-0_6);
   background-color: var(--color-0e1113);
   position: relative;
 }
@@ -2120,7 +2120,7 @@ article.chem {
 }
 
 .s-footer p.lead {
-  color: var(--color-rgb-white-0_3);
+  color: var(--color-rgb-white-0_6);
 }
 
 .footer__bottom {
